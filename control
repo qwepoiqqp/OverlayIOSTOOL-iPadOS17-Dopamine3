@@ -1,0 +1,9 @@
+Package: com.vietanh.overlayiostool
+Name: OverlayIOSTOOL
+Depends: mobilesubstrate, firmware (>= 17.0), firmware (<< 18.0)
+Version: 5.27.0+ios17.1
+Architecture: iphoneos-arm64
+Description: iPadOS/iOS 17 rootless overlay for Dopamine 3 (arm64 + arm64e tweak).
+Maintainer: Viet Anh
+Author: Viet Anh
+Section: Tweaks
