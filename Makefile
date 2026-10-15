@@ -13,7 +13,7 @@ include $(THEOS)/makefiles/common.mk
 TWEAK_NAME = OverlayIOSTOOL
 OverlayIOSTOOL_FILES = Tweak.x
 OverlayIOSTOOL_ARCHS = arm64 arm64e
-OverlayIOSTOOL_CFLAGS = -fobjc-arc -O2
+OverlayIOSTOOL_CFLAGS = -fobjc-arc -O2 -Wno-deprecated-declarations
 OverlayIOSTOOL_FRAMEWORKS = UIKit CoreGraphics QuartzCore
 
 include $(THEOS_MAKE_PATH)/tweak.mk
@@ -23,7 +23,7 @@ include $(THEOS_MAKE_PATH)/tweak.mk
 APPLICATION_NAME = OverlayIOSTOOLApp
 OverlayIOSTOOLApp_ARCHS = arm64
 OverlayIOSTOOLApp_FILES = App/main.m App/AppDelegate.m App/ViewController.m
-OverlayIOSTOOLApp_CFLAGS = -fobjc-arc -O2
+OverlayIOSTOOLApp_CFLAGS = -fobjc-arc -O2 -Wno-deprecated-declarations
 OverlayIOSTOOLApp_FRAMEWORKS = UIKit CoreGraphics ImageIO PhotosUI
 OverlayIOSTOOLApp_RESOURCE_DIRS = Resources
 OverlayIOSTOOLApp_INSTALL_PATH = /Applications
